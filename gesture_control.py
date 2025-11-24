@@ -8,15 +8,12 @@ mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(max_num_hands=1)
 mp_draw = mp.solutions.drawing_utils
 
-# Helper: check if finger is up
+
 def finger_up(landmarks, finger_tip, finger_dip):
     return landmarks[finger_tip].y < landmarks[finger_dip].y
 
 def detect_gesture(landmarks):
-    # Landmarks by ID
-    # Thumb: tip=4, dip=3
-    # Index: tip=8, dip=7
-    # Middle: tip=12, dip=11
+   
 
     thumb = finger_up(landmarks, 4, 3)
     index = finger_up(landmarks, 8, 7)
@@ -69,7 +66,7 @@ def execute_action(gesture):
 cap = cv2.VideoCapture(0)
 last_action_time = time.time()
 
-print("✨ Gesture Control Started! Use your hand in front of the webcam.")
+print(" Gesture Control Started! Use your hand in front of the webcam.")
 
 while True:
     success, frame = cap.read()
