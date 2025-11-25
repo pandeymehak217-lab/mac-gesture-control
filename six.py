@@ -1,18 +1,10 @@
 
-
-
 from __future__ import absolute_import
-
 import functools
 import itertools
 import operator
 import sys
 import types
-
-__author__ = "Benjamin Peterson <benjamin@python.org>"
-__version__ = "1.17.0"
-
-
 
 PY2 = sys.version_info[0] == 2
 PY3 = sys.version_info[0] == 3
@@ -184,7 +176,7 @@ class _SixMetaPathImporter(object):
 
     def load_module(self, fullname):
         try:
-            # in case of a reload
+          
             return sys.modules[fullname]
         except KeyError:
             pass
