@@ -14,7 +14,6 @@ def finger_up(landmarks, finger_tip, finger_dip):
 
 def detect_gesture(landmarks):
    
-
     thumb = finger_up(landmarks, 4, 3)
     index = finger_up(landmarks, 8, 7)
     middle = finger_up(landmarks, 12, 11)
