@@ -86,19 +86,6 @@ Make sure Python/Terminal has webcam permission:
 
 ---
 
-## 📁 Project Structure
-```
-mac-gesture-control/
-│── gesture_control.py
-│── README.md
-│── Screenshot-2025-11-24.png
-│── assets/
-│     └── logo.png
-│── demo/
-│     └── demo.gif
-│── venv/
-│── requirements.txt
-```
 
 ---
 
